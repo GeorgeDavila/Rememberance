@@ -1,5 +1,9 @@
 main/db/user.db
 
+#venv stuff
+scripts/
+pyvenv.cfg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
