@@ -5,7 +5,9 @@ import sqlite3
 import datetime
 from PIL import Image
 
-userDB = "user.db"
+#running this should create a valid table with images using sql browser from https://sqlitebrowser.org/
+
+userDB = "test.db"
 db_directory = "db"
 userDB_PATH = f"{db_directory}/{userDB}"
 
@@ -23,4 +25,11 @@ screenshotPATH = "testimg1.jpg" #might just temp save screenshots as temp.png al
 
 connection = sqlite3.connect(userDB_PATH)
 insertBLOB(grabid, devicetime, ocrtext, classes, screenshotPATH, userDB_PATH)
-print(connection.total_changes)
+
+grabid = 2
+devicetime = datetime.datetime.now()
+ocrtext = "bye world!"
+classes = "placeholder"
+
+screenshotPATH = "testimg2.png"
+insertBLOB(grabid, devicetime, ocrtext, classes, screenshotPATH, userDB_PATH)
