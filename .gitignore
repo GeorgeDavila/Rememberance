@@ -1,4 +1,4 @@
-db/user.db
+main/db/user.db
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
