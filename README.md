@@ -40,8 +40,10 @@ Finally we need to let users query the DB for answers. VectorDB can be queried w
 May later incorporate visual QA - remains to be seen.
 
 ## Resources & References
+
 - https://sqlitebrowser.org/
 
 - https://pynative.com/python-sqlite-blob-insert-and-retrieve-digital-data/
 - https://www.geeksforgeeks.org/python-sqlite-working-with-date-and-datetime/#
+- https://www.digitalocean.com/community/tutorials/how-to-use-the-sqlite3-module-in-python-3
 

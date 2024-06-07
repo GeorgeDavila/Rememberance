@@ -1,5 +1,5 @@
 main/db/user.db
-
+share/ 
 #venv stuff
 scripts/
 pyvenv.cfg
