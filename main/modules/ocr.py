@@ -19,7 +19,7 @@ def runOCR_fromPath(image2processPATH, languageCode='en'):
 
 def runOCR_fromImageObject(cv2_image, languageCode='en'):
     ocr = PaddleOCR(lang=languageCode) # need to run only once to load model into memory
-    img_path = image2processPATH
+    img_path = cv2_image
     result = ocr.ocr(img_path, det=True, cls=False)
     for idx in range(len(result)):
         res = result[idx]

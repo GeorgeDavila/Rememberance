@@ -1,5 +1,9 @@
 main/db/user.db
 share/ 
+
+#Folder created from pip install vectordb2 (idfk why):
+Library/
+
 #venv stuff
 scripts/
 pyvenv.cfg

@@ -11,7 +11,7 @@ It's important to note that we won't necessarily be using SOTA or top-performanc
 I'll probably include options to use cloud-based APIs for certain AI Inference subroutines - tbd. The goal is to run everything locally by default. 
 
 ### Database
-My personal preference is for a local vector db so we're going to start with that. Will use the vectordb python library ([pypi docs](https://pypi.org/project/vectordb/), [usage docs](https://vectordb.com/))
+My personal preference is for a local vector db so we're going to start with that. Will use the vectordb python library ([pypi docs](https://pypi.org/project/vectordb/), [usage docs](https://vectordb.com/)). VectorDB requires tons on installs/space for large libraries so may just use sqlite depends how much those libraries overlap with libs we need for other modules.
 
 Other closed-source analogs reportedly use OCR-processed text saved to a local SQLite db. This may be to ensure performance on lower end devices. I'll probably build both of these out more or less in parallel. I want to set up image-based search so I'll use the sqlite db to store the image blobs and OCR'd text. 
 
